@@ -4,27 +4,29 @@ import java.awt.*;
 public class JavaLibs5026211142 {
 	public static void main(String[] args) {
 
+		String Perkenalan, Umur, Gender, Perasaan;
 
-        String[] options = new String[]{"Iya","Tidak"};
-        int introInt = JOptionPane.showOptionDialog(null, "Hai, Apakah Kamu Manusia?", "WARNING!", 0, 2, null, options, options[0]);
-        if (introInt != 0 ){
-            JOptionPane.showMessageDialog(null, "Sampai Bertemu Lagi!","Sampai Jumpa! :(",2);
-            System.exit(0);
-	};
+
+        	String[] options = new String[]{"Iya","Tidak"};
+        	int introInt = JOptionPane.showOptionDialog(null, "Hai, Apakah Kamu Manusia?", "WARNING!", 0, 2, null, options, options[0]);
+        	if (introInt != 0 ){
+            	JOptionPane.showMessageDialog(null, "Sampai Bertemu Lagi!","Sampai Jumpa! :(",2);
+            	System.exit(0);
+		};
 
  		// Perkenalan
-                String name = JOptionPane.showInputDialog("Halo, Namamu siapa?");
-                JOptionPane.showMessageDialog(null, "Halo "+name+", Salam Kenal!");
+                String perkenalan = JOptionPane.showInputDialog("Halo, Namamu siapa?");
+                JOptionPane.showMessageDialog(null, "Halo "+perkenalan+", Salam Kenal!");
            
                 // Umur
-                String age = JOptionPane.showInputDialog("Saat ini umur berapa?");
-                int ageConvert=Integer.parseInt(age);
-                if ( ageConvert > 40 ) {
+                String umur = JOptionPane.showInputDialog("Saat ini umur berapa?");
+                int umurConvert=Integer.parseInt(umur);
+                if ( umurConvert > 40 ) {
                     JOptionPane.showMessageDialog(null, "Wah kamu cukup dewasa ya");
-                } else if ( ageConvert == 18 ) {
-                    JOptionPane.showMessageDialog(null, "wahh "+name+" kita seumuran nih.");
+                } else if ( umurConvert == 18 ) {
+                    JOptionPane.showMessageDialog(null, "wahh "+perkenalan+" kita seumuran.");
                 } else {
-                    JOptionPane.showMessageDialog(null, "Yah "+age+".");
+                    JOptionPane.showMessageDialog(null, "Ohh kamu "+umur+" tahun.");
                 }
 
 
@@ -39,7 +41,7 @@ public class JavaLibs5026211142 {
         	if (sukaInt != 0 ){
             	JOptionPane.showMessageDialog(null, "Sampai Bertemu Lagi! Sedih nihh hiks	","Sedih Nih :(",2);
 		}else {
-		JOptionPane.showMessageDialog(null, "Terimakasih terimakasih Kak " + name+ " :D " );
+		JOptionPane.showMessageDialog(null, "Terimakasih banyak Kak " +perkenalan+ " :D " );
             	System.exit(0);
 	};
                
